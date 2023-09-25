@@ -16,13 +16,15 @@
             //@ts-ignore
             const input: string = evt.detail;
             const { bulls, cows } = calculateBullsAndCows(input, random);
-            tableValues.push({
-                input,
-                bulls,
-                cows,
-                attempt: tableValues.length + 1,
-            });
-            tableValues = [...tableValues];
+            tableValues = [
+                ...tableValues,
+                {
+                    input,
+                    bulls,
+                    cows,
+                    attempt: tableValues.length + 1,
+                },
+            ];
             if (input === random.toString()) {
                 alert(`כל הכבוד ניצחת ב ${tableValues.length} ניסיונות`)
             }
