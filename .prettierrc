@@ -1,0 +1,17 @@
+{
+    "tabWidth": 4,
+    "overrides": [
+    {
+        "files": ["main.js", "main.ts"],
+        "options": {
+            "tabWidth": 2
+        }
+    },
+    {
+        "files": ["tailwind.config.js"],
+        "options": {
+            "tabWidth": 2
+        }
+    }
+    ]
+}
