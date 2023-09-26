@@ -26,7 +26,9 @@
                 },
             ];
             if (input === random.toString()) {
-                alert(`כל הכבוד ניצחת ב ${tableValues.length} ניסיונות`)
+                alert(`כל הכבוד ניצחת ב ${tableValues.length} ניסיונות`);
+                const event = new CustomEvent("game-finished", {});
+                window.dispatchEvent(event);
             }
         });
     });
