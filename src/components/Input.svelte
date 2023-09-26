@@ -35,6 +35,9 @@
             window.dispatchEvent(event);
             InputValue = '';
         });
+        window.addEventListener("delete-double-click", function (evt) {
+            InputValue = '';
+        });
     });
 </script>
 

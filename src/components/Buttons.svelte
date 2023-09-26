@@ -32,6 +32,12 @@
         window.dispatchEvent(event);
     }
 
+    function handleDeleteDoubleClick() {
+        const event = new CustomEvent("delete-double-click");
+
+        window.dispatchEvent(event);
+    }
+
     function handelEnterClick() {
         const event = new CustomEvent("enter-click");
 
@@ -41,15 +47,15 @@
 
 <div class="inline-grid grid-cols-3">
     {#each numbers as number}
-        <Button onclick={() => handleNumberClick(number)}>{number}</Button>
+        <Button onclick={() => handleNumberClick(number)} title={number.toString()}>{number}</Button>
     {/each}
-    <Button onclick={() => handleNumberClick(0)}>0</Button>
+    <Button onclick={() => handleNumberClick(0)} title="0">0</Button>
     <Button onclick={handelEnterClick}>
-        <div class="flex items-center justify-center">
+        <div class="flex items-center justify-center" title="הזן מספר">
             <Icon src={AiOutlineEnter} color={isDarkMode ? "white" : ""} />
         </div>
     </Button>
-    <Button onclick={handleDeleteClick}>
+    <Button onclick={handleDeleteClick} onDoubleClick={handleDeleteDoubleClick} title="מחק ספרה אחת">
         <div class="flex items-center justify-center">
             <Icon src={FiDelete} />
         </div>
