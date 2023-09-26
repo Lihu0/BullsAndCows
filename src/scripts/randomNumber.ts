@@ -5,7 +5,7 @@ function hasTowIdenticalDigits(number: number): boolean {
     return digits.length !== digitsSet.size
 }
 
-function randomNumber() {
+function randomNumber(): number {
     const min: number = 10 ** (4 - 1)
     const max: number = (10 ** 4) - 1
     let rnd: number
@@ -17,4 +17,4 @@ function randomNumber() {
     return rnd
 }
 
-export default randomNumber
+export default randomNumber;

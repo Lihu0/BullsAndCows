@@ -1,5 +1,4 @@
 # Vite + Svelte + Typescript + tailwindcss
-tests powerd by [vitest](https://vitest.dev/)
 ## <https://bullsandcowslihu.netlify.app/> 
 
 ## Running localy
