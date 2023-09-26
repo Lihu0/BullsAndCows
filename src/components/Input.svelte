@@ -1,8 +1,6 @@
 <script lang="ts">
-    import { getContext, onMount } from "svelte"
+    import { onMount } from "svelte"
     let InputValue: String = '';
-    const random: number = getContext("random");
-    let tries: number = getContext("tries");
 
     onMount(() => {
         window.addEventListener("number-click", function (evt) {
@@ -42,6 +40,7 @@
 
 <input
     type="number"
+    inputmode="numeric"
     class="border-[2px] border-slate-800 dark:border-white bg-transparent  placeholder:text-right rounded-md"
     bind:value={InputValue}
     min="1234"
