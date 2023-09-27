@@ -1,5 +1,6 @@
 # Vite + Svelte + Typescript + Tailwindcss
-tests powerd by [`vitest`](https://vitest.dev/)
+tests powerd by [`vitest`](https://vitest.dev/)  
+icons powerd by [`svelte-icons-pack`](https://leshak.github.io/svelte-icons-pack/#/)
 ## <https://bullsandcowslihu.netlify.app/> 
 
 ## Running localy
