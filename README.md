@@ -1,4 +1,4 @@
-# Vite + Svelte + Typescript + tailwindcss
+# Vite + Svelte + Typescript + Tailwindcss
 tests powerd by [`vitest`](https://vitest.dev/)
 ## <https://bullsandcowslihu.netlify.app/> 
 
